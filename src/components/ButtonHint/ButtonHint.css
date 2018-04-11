@@ -1,0 +1,10 @@
+.buttonHint {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 100px;
+  background: cadetblue;
+  border-radius: 20px;
+  font-size: 30px;
+}
