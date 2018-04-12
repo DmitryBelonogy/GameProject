@@ -11,4 +11,9 @@ button{
     width: 150px;
     height: 63px;
     font-size: 40px;
+    font-weight: 600;
+    color: black;
+    background-color: #ffeb00;
+    border: none;
+    border-radius: 50px;
 }
