@@ -39,7 +39,7 @@ class Game extends Component {
       <div className='gamePage'>
         <div className='emojy'>
           {
-            this.state.currentData.emogy.map(item => <span key={item} className={`emogy ${item}`}>2</span>)
+            this.state.currentData.emogy.map(item => <span key={item} className={`emogy ${item}`}></span>)
           }
         </div>
         <input className='inputAns' type="text"/>
