@@ -1,15 +1,22 @@
 import React, { Component } from 'react';
+import { BrowserRouter as Router,	Route,	Link, Redirect } from 'react-router-dom';
+import Board from './components/Board';
+import StartPage from './components/StartPage';
 import './App.css';
-
-import GameBoard from './components/GameBoard/GameBoard';
 
 class App extends Component {
   render() {
-    return (
-      <div className="App">
-        <GameBoard />
-      </div>
-    );
+    return(
+      <Provider store={store}>      
+        <Router>
+          <div>        
+            <Route path="/start_page" component={StartPage}/>
+            <Route path="/game" component={Game}/>
+            <Redirect from="" to="/start_page"/>
+          </div>
+        </Router>
+      </Provider>      
+    )       
   }
 }
 
