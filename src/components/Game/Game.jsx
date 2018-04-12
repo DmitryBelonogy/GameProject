@@ -43,7 +43,6 @@ class Game extends Component {
             this.state.currentData.emogy.map(item => <span key={item} className={`emogy ${item}`}></span>)
           }
         </div>
-        {}
         <input className='inputAns' type="text"/>
         <button onClick={this.handleBtnClick}>Submit</button>
       </div>   
