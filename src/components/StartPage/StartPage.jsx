@@ -8,7 +8,7 @@ class StartPage extends Component {
   render() {
     return (
       <div className="start-wrapper">  
-      <Link to="/game"><button>Start</button></Link>
+      <Link to="/game"><button>Start Game</button></Link>
       </div>
     )
   }
