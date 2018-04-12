@@ -5,11 +5,11 @@ import './Game.css';
 const DATA = [
   {
   emogy: ['smile1', 'smile2','smile3','smile4'],
-  ans: 'asdfgh'
+  ans: 'a'
   },
   {
   emogy: ['smile', 'smile','smile','smile'],
-  ans: 'qwerty'
+  ans: 'q'
   },
 ];
 
@@ -44,18 +44,22 @@ class Game extends Component {
 
   closeModal() {
     this.setState({modalIsOpen: false});
-    this.setState({completed: !this.state.completed});
+    this.setState({completed: false});    
   }
 
   handleBtnClick = () => {
     this.openModal();
-    let input = document.querySelector('.inputAns').value;
-  
+    let input = document.querySelector('.inputAns').value;  
     if(input === this.state.currentData.ans) {
-      this.setState({completed: !this.state.completed});
-      this.setState({
-        currentData: DATA[++this.state.index],
-      })
+      this.setState({completed: true});
+      if(this.state.index === DATA.length - 1) {
+        window.location.href = '/start_page'
+      } else {       
+        this.setState({
+          currentData: DATA[++this.state.index],
+        });
+        document.querySelector('.inputAns').value = '';
+      };      
     } 
   }
 
