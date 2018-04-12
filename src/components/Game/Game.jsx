@@ -20,7 +20,8 @@ class Game extends Component {
   constructor() {
     super();
     this.state = {
-      currentData: DATA[0]
+      index: 0,
+      currentData: DATA[0],
     };
   }
 
@@ -29,7 +30,7 @@ class Game extends Component {
     if(input === this.state.currentData.ans) {
       alert('good )))');
       this.setState({
-        currentData: DATA[1],
+        currentData: DATA[++this.state.index],
       })
     } 
   }
