@@ -1,0 +1,27 @@
+.gamePage {
+  /* display: flex; */
+  height: 100vh;
+}
+
+.emojy {
+  width: 80%;
+  height: 33%;
+  background: grey;
+}
+
+.inputAns {
+  margin: 0 auto;
+  width: 80%;
+  height: 10%;
+}
+
+.gamePage button {
+  width: 80%;
+}
+
+.emogy {
+  display: inline-block; 
+  width: 50px;
+  height: 50px;
+  background: white;  
+}
